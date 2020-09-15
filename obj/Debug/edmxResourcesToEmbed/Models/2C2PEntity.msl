@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="C2PModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="TBL_TransactionDATA">
+      <EntityTypeMapping TypeName="C2PModel.TBL_TransactionDATA">
+        <MappingFragment StoreEntitySet="TBL_TransactionDATA">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TRNID" ColumnName="TRNID" />
+          <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+          <ScalarProperty Name="CURRENCY" ColumnName="CURRENCY" />
+          <ScalarProperty Name="TRANDATE" ColumnName="TRANDATE" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="UPLOADDTE" ColumnName="UPLOADDTE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

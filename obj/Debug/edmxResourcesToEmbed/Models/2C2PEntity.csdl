@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="C2PModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TBL_TransactionDATA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TRNID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AMOUNT" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CURRENCY" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TRANDATE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="STATUS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPLOADDTE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TBL_TransactionDATA" EntityType="Self.TBL_TransactionDATA" />
+  </EntityContainer>
+</Schema>
